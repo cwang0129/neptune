@@ -1,0 +1,29 @@
+
+<% if @item.errors.any? %>
+<ul>
+	<% @item.errors.full_messages.each do |msg| %>
+	<li><%= msg %></li>
+	<% end %>
+</ul>
+<% end %>
+<%= form_for @item do |f| %>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %><br/>
+	</p>
+	<p>
+		<%= f.label :sku %>
+		<%= f.text_area :sku %><br/>
+	</p>
+	<p>
+		<%= f.label :active %>
+		<%= f.text_field :active %><br/>
+	</p>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end -%>
+
+
+
+<%= link_to 'back to item listing', items_path %>

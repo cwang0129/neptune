@@ -1,0 +1,25 @@
+<h1>Showing item</h1>
+
+<p>
+	name: <%= @item.name %>
+</p>
+
+<p>
+	sku: <%= @item.sku %>
+</p>
+
+<p>
+	active: <%= @item.active %>
+</p>
+
+<p>
+	created_at: <%= @item.created_at %>
+</p>
+
+<p>
+	updated_at: <%= @item.updated_at %>
+</p>
+
+<%= link_to 'edit to this item', edit_item_path(@item) %> |
+
+<%= link_to 'back to item listing', items_path %>
