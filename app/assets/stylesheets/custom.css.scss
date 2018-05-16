@@ -1,0 +1,40 @@
+$navbar-default-bg: #08088A;
+
+@import "bootstrap";
+
+#logo {
+	float: left;
+	font-size: 1.7em;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#logo:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: asset-url('Sample.JPG');
+	background-size: cover;
+	height: 550px;
+	width: 1000px;
+}
+
+.jumbotron h1 {
+	color: #fff;
+	text-align: center;
+	margin-bottom: -1px;
+	font-weight: bold;
+}
+
+.btn-xlarge {
+	font-size: 1.7em;
+	background-color: Teal;
+}
+
